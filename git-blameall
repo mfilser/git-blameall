@@ -135,7 +135,7 @@ def main():
   
   # GET ALL REVISIONS
   if 1:
-    cmd         = 'git rev-list HEAD -- %s'%fn
+    cmd         = 'git log --format="%%H" %s'%fn
     if V:
       print('[cmd]',cmd)
     pipe        = os.popen(cmd)
