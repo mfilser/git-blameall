@@ -148,7 +148,7 @@ def main():
     
   # GET REVISION INFO
   if 1:
-    cmd         = 'git log --format="%%ad %%cn" --date=short %s'%fn
+    cmd         = 'git log --format="%%ad %%an" --date=short %s'%fn
     if V:
       print('[cmd]',cmd)
     pipe        = os.popen(cmd)
